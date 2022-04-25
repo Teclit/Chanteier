@@ -1,0 +1,177 @@
+
+/*
+=============== 
+Fonts
+===============
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+    --primary-color: #1f699a;
+    --hover-primary-color: #2b98cf;
+    --success-color: #00c292;
+    --dark-color: #0a0a0a;
+    --light-color: #ffffff;
+    --warning-color: #efae2c;
+    --warning-bg-color: #eebb54;
+    --f-secondary-color: #767676;
+    --s-secondary-color: #d2d6db;
+    --brown-color: #a43838d0;
+    --danger-color: #d9534f;
+    --out-danger-color: #f70e06;
+    --lightBlue-color:#edf1f5;
+    --default_color :#333;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+}
+
+
+/*=============== Global Styles==============*/
+
+    *,
+    ::after,
+    ::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        font-family: var(--ff-primary);
+        color: var(--default_color);
+        line-height: 1.6; 
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    h1,
+    h2 {
+        font-weight: 300;
+        line-height: 1.2;
+        margin: 10px 0;
+    }
+
+    p {
+        /* margin: 10px 0; */
+        font-size: 14px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .barLeftRight{
+        display: none;
+    }
+    
+/*===============End Global Styles==============*/
+
+.container{
+    margin:10% 20%;
+    padding:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 20px;
+    color: var(--f-secondary-color);
+}
+
+.container .headerLogo{
+    color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .formContainer{
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-start;
+    background-color:var(--light-color) ;
+    border: solid 2PX var(--lightBlue-color);
+} 
+
+.container .formContainer h3 {
+    padding: 20PX;
+    color: var(--f-secondary-color);
+    font-weight: 300;
+    align-self: center;
+}
+
+  /* Full-width input fields */
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    /* Set a style for all buttons */
+    button {
+        background-color: var(--warning-color);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.8;
+    }
+    
+    button:hover {
+        opacity:2;
+    }
+
+    /*Tablet*/
+@media (max-width:800px) {
+    .container{
+        margin:5%;
+        padding:50px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+    
+@media (max-width:500px) {
+    .container{
+        margin:50PX 0;
+        padding:50px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    
+    <title></title>
+</head>
+<body>
+    <div id="wrapper" class="page-conatiner">
+        <div class="navbar navbar-default-sidebar" role="navigation">
+            <div class="logo">
+                <img  class="logoshape ml-l pt-s pb-s" src="images/logoshape.png" alt="logoshape">
+                <span class="hidden-xs">
+                    <img class="logoText" src="images/logotext.png" alt="logotext">
+                </span>
+            </div>
+            <div class="iconList" id="iconList"><i class="fa-solid fa-bars"></i></div>
+            <div class="dropdown">
+                <button onclick="userParameter()" class="dropbtn" id="dropbtn">
+                    <i class="fa-solid fa-circle-user fa-2x mr-s showMinMedia"></i> <span class="hiddenMinMedia">Guillaume ROBILLI..</span> <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <ul id="userDropList" class="dropdown-content">
+                    <li><a href="#"><i class="fa-solid fa-gauge showMinMedia mr-m"></i><span class="hiddenMinMedia">compte</span></a></span></li>
+                    <li><a href="#"><i class="fa-solid fa-address-card  showMinMedia mr-m"></i><span class="hiddenMinMedia">Mes Information</span></a></span></li>
+                    <li><a href="#"><i class="fa-solid fa-image  showMinMedia mr-m"></i><span class="hiddenMinMedia">Modifier ma photo</span></a></span></li>
+                    <li><a href="#"><i class="fa-solid fa-user-secret  showMinMedia mr-m"></i><span class="hiddenMinMedia">Mes Identifiants</span></a></span></li>
+                    <li><a href="#"><i class="fa-solid fa-comments   showMinMedia mr-m"></i><span class="hiddenMinMedia">Mes Notifications</span></a></span></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-user  showMinMedia  mr-m"></i><span class="hiddenMinMedia">Mes critère</span></a></span></li>
+                    <li><a href="#"><i class="fa-solid fa-power-off   showMinMedia mr-m"></i><span class="hiddenMinMedia">se déconnecter</span></a></span></li>
+
+                </ul>
+            </div>
+            
+            <div class="sidebarMenuContainer">
+                <ul class="sidebarMenuList" id="sidebarMenuList">
+                    <h5> --- Mon Reporting</h5>
+                    <li><a><i class="fa-solid fa-gauge  showMinMedia mr-m"></i><span class="hiddenMinMedia">Tableau de beaurd</a></span></li>
+                    <li><a><i class="fa-solid fa-address-book showMinMedia mr-m"></i><span class="hiddenMinMedia">Mes Prospects</a></span></li>
+                    <li><a><i class="fa-solid fa-download showMinMedia mr-m"></i><span class="hiddenMinMedia">Téléchargment</a></span></li>
+                    <li><a><i class="fa-solid fa-phone  showMinMedia mr-m"></i><span class="hiddenMinMedia">Mes Appels</a></span></li>
+                    <li><a><i class="fa-solid fa-calendar-check showMinMedia mr-m"></i><span class="hiddenMinMedia">Mes RDVs</a></span></li>
+                    <li><a> <i class="fa-solid fa-calendar-days showMinMedia mr-m"></i><span class="hiddenMinMedia">Mon Agenda</a></span></li>
+                <!-- </ul> -->
+                
+                <h5> --- Commades</h5>
+                <!-- <ul class="menuCommandes"> -->
+                    <li><a><i class="fa-solid fa-file-lines  showMinMedia mr-m"></i><span class="hiddenMinMedia">Mes Commandes</a></span></li>
+                    <li><a><i class="fa-solid fa-file  showMinMedia mr-m"></i><span class="hiddenMinMedia">Mes devis</a></span></li>
+                    <li><a><i class="fa-solid fa-file-lines  showMinMedia mr-m"></i><span class="hiddenMinMedia">Mes moyens de paiement</a></span></li>
+                    <li><a><i class="fa-solid fa-envelope showMinMedia mr-m"></i><span class="hiddenMinMedia">Messagerie</a></span></li>
+                <!-- </ul> -->
+
+                <h5> --- MarketPlace</h5>
+                <!-- <ul class="menuMarketPlace"> -->
+                    <li><a><i class="fa-solid fa-gavel showMinMedia mr-m"></i><span class="hiddenMinMedia">Lead à l'unité <span class="tc-danger ml-s">NEW</span></a></span></li>
+                    <li><a><i class="fa-solid fa-calendar-days showMinMedia mr-m"></i><span class="hiddenMinMedia">Rendez-Vous</a></span></li>
+                    <li><a><i class="fa-solid fa-cart-arrow-down showMinMedia mr-m"></i><span class="hiddenMinMedia">Mon panier</a></span></li>
+                    <li><a><i class="fa-solid fa-credit-card showMinMedia mr-m" ></i><span class="hiddenMinMedia">Pack Crédits</a></span></li>
+                <!-- </ul> -->
+            
+                <h5> --- Facturation</h5>
+                <!-- <ul class="menuFacturation"> -->
+                    <li><a><i class="fa-solid fa-file-pdf showMinMedia mr-m"></i><span class="hiddenMinMedia">Factures</a></span></li>
+                    <li><a><i class="fa-solid fa-credit-card showMinMedia mr-m" ></i><span class="hiddenMinMedia">Transactions</a></span></li>
+                    <li><a><i class="fa-solid fa-cart-shopping showMinMedia mr-m"></i><span class="hiddenMinMedia">Mes achats</a></span></li>
+                <!-- </ul> -->
+
+                <h5> --- Collaborateurs</h5>
+                <!-- <ul class="menuCollaborateur"> -->
+                    <li><a><i class="fa-solid fa-users showMinMedia mr-m"></i><span class="hiddenMinMedia">Collaborateurs</a></span></li>
+                    <li><a><i class="fa-solid fa-gears showMinMedia mr-m"></i><span class="hiddenMinMedia">Restrictions</a></span></li>
+                    <li><a><i class="fa-solid fa-share-nodes showMinMedia mr-m"></i><span class="hiddenMinMedia">Invitation</a></span></li>
+                    
+                </ul>
+                
+                
+            </div>
+        </div>
+        <!-- Start page-wrapper --> 
+        <div id="page-wrapper" class="page-content">
+            <nav class="navbar navbar-default">
+                <ul class="defaultLeftMenu" id="defaultLeftMenu">
+                    <li class="mr-s"><a href="#">Espace Pro</a></li>
+                    <li><a href="#">Leads à L'unité</a></li>
+                    <li id="barLeftMenu"><a href="#" ><i class="fa-solid fa-left-long"></i></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-headset fa-2xl mr-s"></i>0615085609 </a></li>
+                    <!-- <i class="fa-solid fa-bars"></i> -->
+                </ul>
+
+                <div class="defaultRightMenu">
+                    <div><a href="#"><i class="fa-solid fa-2x fa-envelope"></i><span class="ml-s">0</span></a></div>  
+                    <div><a href="#"><i class="fa-solid fa-message fa-2x "></i><span class="ml-s">0</span></a></div> 
+                    <div><a href="#"><i class="fa-solid fa-cart-shopping fa-2x"></i><span> Prospects</span></a></div> 
+
+                    <div class="dropdownmenutop">
+                        <i class="fa-solid fa-circle-user  mr-s showMinMedia"></i> <span class="hiddenMinMedia">Guillaume ROBILLI..</span> <i class="fa-solid fa-caret-down"></i>
+                        <ul id="usertopDropList" class="dropdown-contentmenutop">
+                            <li><a href="#"><i class="fa-solid fa-gauge showMinMedia mr-m"></i><span class="hiddenMinMedia">compte</span></a></span></li>
+                            <li><a href="#"><i class="fa-solid fa-address-card  showMinMedia mr-m"></i><span class="hiddenMinMedia">Mes Information</span></a></span></li>
+                            <li><a href="#"><i class="fa-solid fa-image  showMinMedia mr-m"></i><span class="hiddenMinMedia">Modifier ma photo</span></a></span></li>
+                            <li><a href="#"><i class="fa-solid fa-user-secret  showMinMedia mr-m"></i><span class="hiddenMinMedia">Mes Identifiants</span></a></span></li>
+                            <li><a href="#"><i class="fa-solid fa-comments   showMinMedia mr-m"></i><span class="hiddenMinMedia">Mes Notifications</span></a></span></li>
+                            <li><a href="#"><i class="fa-solid fa-circle-user  showMinMedia  mr-m"></i><span class="hiddenMinMedia">Mes critère</span></a></span></li>
+                            <li><a href="#"><i class="fa-regular fa-power-off   showMinMedia mr-m"></i><span class="hiddenMinMedia">se déconnecter</span></a></span></li>
+        
+                        </ul>
+                    </div>
+                    <div><a href="#"><i class="fa-solid fa-power-off fa-2x"></i> </a></div>
+
+                </div>
+
+            </nav>
+            <div class="container-fluid">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae officia exercitationem aut laudantium facilis officiis, aspernatur, veniam soluta numquam sed, dolores nesciunt voluptatibus nemo amet animi iure explicabo minus saepe!
+                    Earum quaerat provident repellat veritatis, perspiciatis ab explicabo facilis, dolore aliquid quos animi sapiente, eaque magni excepturi esse sit! Blanditiis dicta eveniet dolor aliquid fugiat quos. Quibusdam quidem tenetur asperiores?
+                    Doloremque accusantium et odit voluptatibus at magni iste, enim vitae esse temporibus assumenda, sapiente labore iure hic, suscipit incidunt laborum eius dolor rem facilis corporis vero ullam saepe? Provident, unde.
+                    Error voluptatem et mollitia porro in aspernatur eos, dolorem enim nostrum aliquam debitis esse id quasi! Incidunt natus velit unde necessitatibus tenetur delectus fuga neque, sapiente officia earum molestiae veniam.
+                    Sequi modi non saepe? Voluptatibus perspiciatis aut, quibusdam delectus iste voluptatum nisi dignissimos. Dolore, sapiente molestiae. Deleniti nobis sequi, dolores iure asperiores voluptates veritatis veniam aut ex saepe accusamus enim.
+                    Neque excepturi fugit est nobis, in porro quas dicta ipsum aspernatur, omnis natus impedit eos, suscipit sunt at laudantium deleniti tempore quibusdam rerum sequi! Maiores numquam quisquam sed optio facere.
+                    Quae optio fuga nesciunt error ipsa consectetur vitae totam commodi reprehenderit ratione quas esse aliquam soluta, sint illo maxime excepturi expedita exercitationem, qui neque quis quibusdam? Mollitia dignissimos inventore necessitatibus?
+                    Nam illum voluptatibus explicabo neque quos ad consectetur molestias placeat quaerat exercitationem. Distinctio, repudiandae! Ipsam, laborum molestias. Alias laudantium voluptatum quod necessitatibus? Quaerat, unde vel. Aperiam quam unde veritatis nam!
+                    Natus aspernatur sequi atque, facilis perferendis eligendi voluptates quidem iure illo? Eius tempore aliquam quam ex autem eum numquam. Voluptatem dolores alias voluptate debitis perspiciatis magni iste officiis impedit sapiente!
+                    Dolores ab quos eum quia voluptatem magni quo itaque labore aperiam iusto accusamus eaque eos dolore eligendi, illo odit non expedita. Ut distinctio molestiae repudiandae esse rerum dolorum explicabo eveniet.
+                    Quibusdam praesentium tempore enim quod veritatis placeat magni dolore dignissimos quam officiis recusandae ipsa labore, rem incidunt facere ex optio debitis pariatur quaerat fuga eveniet facilis ut! Unde, repellendus libero!
+                    Consequatur eius nihil laudantium, veritatis fugiat exercitationem voluptate consectetur velit est delectus eum dolores omnis enim! Omnis dolorum quaerat harum. Tenetur laborum vel excepturi iure impedit atque voluptates optio quae?
+                    Itaque ex sequi, esse autem doloribus officiis, placeat voluptates nulla et eius iure magni accusantium corrupti voluptate, aperiam perspiciatis? Perspiciatis doloremque quod debitis doloribus molestiae quaerat laboriosam est quis ullam.
+                    Architecto, soluta. Reprehenderit vero accusantium voluptatum voluptates rem vel perferendis suscipit consequatur nisi! Distinctio labore veniam reprehenderit laborum repellendus accusantium itaque non quo dignissimos, dolore quas natus excepturi corporis repellat.
+                    Labore nostrum dolor quam? Impedit sint soluta unde omnis maxime, totam dolorem velit, eos at aliquid rerum aut quod debitis deserunt veniam illo quasi consectetur reprehenderit nam recusandae? Quibusdam, mollitia?
+                    Aliquid dolorum esse numquam aspernatur libero assumenda natus repellat unde, suscipit blanditiis cumque ipsam rem culpa nisi iure! Cupiditate corrupti mollitia quis fuga aperiam iure laboriosam aut ex repudiandae necessitatibus.
+                    Recusandae necessitatibus magni eos, laudantium architecto nemo deserunt, eligendi expedita, obcaecati perspiciatis quia facilis nostrum rerum doloremque corporis ex. Non nihil eveniet neque et nesciunt libero architecto maxime odio. Voluptates!
+                    Debitis praesentium eos tenetur officiis hic sapiente minus nostrum reprehenderit saepe eum qui laudantium libero, delectus, adipisci accusamus cupiditate iure tempora provident quam! Natus saepe quod nobis aliquam voluptas perspiciatis.
+                    Sunt eaque omnis optio quasi, alias ipsum nemo recusandae? Dolores, veritatis, ad tempora asperiores maiores adipisci eveniet impedit aspernatur cumque corporis sunt rerum repudiandae possimus minima repellendus eos, laudantium doloribus?
+                    Temporibus, eligendi qui aspernatur magnam labore, cumque iste earum quisquam fugit quis dolores porro tempora culpa. Quasi ratione tempore hic possimus fuga eligendi eos incidunt explicabo laudantium quae? Laudantium, deserunt.</p>
+            </div>
+
+            <footer class="footer footer-line">
+                <h5>91m2 Copyright ©2022 </h5>
+                <div class="footerMenu">
+                    <ul>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Termes et Conditions</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </footer>
+
+        </div>
+        <!-- End page-wrapper --> 
+
+
+    </div>
+    <!-- End page container -->
+    <script src="js/script.js"></script>
+    <script src="js/dropdown.js"></script>
+</body>
+</html>

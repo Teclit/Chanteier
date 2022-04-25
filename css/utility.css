@@ -1,0 +1,203 @@
+@import "styles.css";
+
+
+
+/*
+===================
+#Margin
+===================
+*/
+.mx{
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.my{
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.mr-s{
+  margin-right: 8px;
+}
+
+.mr-m{
+  margin-right: 12px;
+}
+
+.mr-l{
+  margin-right: 18px;
+}
+
+.mr-xl{
+  margin-right: 24px;
+}
+
+/*margin Left */
+.ml-s{
+  margin-left: 8px;
+}
+
+.ml-m{
+  margin-left: 12px;
+}
+
+.ml-l{
+  margin-left: 18px;
+}
+
+.ml-x{
+  margin-left: 24px;
+}
+
+/*
+===================
+#Margin
+===================
+*/
+/* margin right */
+.mr-s{
+  margin-right: 8px;
+}
+
+.mr-m{
+  margin-right: 12px;
+}
+
+.mr-l{
+  margin-right: 18px;
+}
+
+.mr-x{
+  margin-right: 24px;
+}
+
+/* Margin left */
+.ml-s{
+  margin-right: 8px;
+}
+
+.ml-m{
+  margin-right: 12px;
+}
+
+.ml-l{
+  margin-right: 18px;
+}
+
+.ml-x{
+  margin-right: 24px;
+}
+
+/* Margin top */
+.mt-s{
+  margin-right: 8px;
+}
+
+.mt-m{
+  margin-right: 12px;
+}
+
+.mt-l{
+  margin-right: 18px;
+}
+
+.mt-x{
+  margin-right: 24px;
+}
+
+/* Margin Bottom */
+.mb-s{
+  margin-bottom: 8px;
+}
+
+.mb-m{
+  margin-bottom: 12px;
+}
+
+.mb-l{
+  margin-bottom: 18px;
+}
+
+.mb-x{
+  margin-bottom: 24px;
+}
+
+/*
+===================
+#Padding
+===================
+*/
+
+.py-s{
+}
+.pl-s{
+  margin-left: 8px;
+}
+
+.pl-m{
+  margin-left: 12px;
+}
+
+.pl-l{
+  margin-left: 18px;
+}
+
+.pl-x{
+  margin-left: 24px;
+}
+
+/*padding Right */
+.pr-s{
+  margin-right: 8px;
+}
+
+.pr-m{
+  margin-right: 12px;
+}
+
+.pr-l{
+  margin-right: 18px;
+}
+
+.pr-x{
+  margin-right: 24px;
+}
+
+/* top */
+.pt-s{
+  margin-top: 8px;
+}
+
+.pt-m{
+  margin-top: 12px;
+}
+
+.pt-l{
+  margin-top: 18px;
+}
+
+.pt-x{
+  margin-top: 24px;
+}
+
+/* bottom */
+.pb-s{
+  margin-bottom: 8px;
+}
+
+.pb-m{
+  margin-bottom: 12px;
+}
+
+.pb-l{
+  margin-bottom: 18px;
+}
+
+.pb-x{
+  margin-bottom: 24px;
+}
+
+
+
+
